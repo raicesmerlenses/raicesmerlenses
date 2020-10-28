@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+p.description {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.div.text-center.container {
+  padding-right: 0px !important;
+  padding: 0% !important;
+  max-width: 100% !important;
+}
+h1.title {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+em.raices {
+  font-weight: bold;
+  color: #31e197;
+  font-size: 1.6rem;
+}
+
+.btn-about {
+  width: 250px;
+  font-size: larger;
+  padding: 20px 60px;
+  color: #fff;
+  background-color: #0090ff;
+  border-color: #17b85a;
+  border-radius: 50px;
+  border-width: 0ch;
+  transition: all 0.3s ease-out;
+}
+
+.btn-about:hover {
+  text-align: center;
+  width: 290px;
+  color: #fff;
+  background-color: #5fea88;
+  border-color: #5fea88;
+}
+
+.about-container {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  color: #31e197;
+}
+
+@media screen and (max-width: 440px) {
+  .about-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  p.description {
+    font-size: 16px;
+  }
+
+  em.raices {
+    font-weight: bold;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .boton-about {
+    padding: 40px 150px;
+    text-align: center;
+    flex-direction: row;
+  }
+}
