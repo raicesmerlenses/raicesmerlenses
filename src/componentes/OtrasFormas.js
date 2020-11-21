@@ -28,7 +28,7 @@ export default function ContactUs() {
       <div className="container">
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
-            <div> <h1>Coordinemos la donacion 🙏</h1></div>
+            <h1 className="mx-auto md-auto xs-auto ">Coordinemos la donacion<span role="img" aria-label="Por Favor" aria-labelledby="Please" >🙏</span></h1>
             <div className="col-8 form-group mx-auto">
               <input
                 type="text"

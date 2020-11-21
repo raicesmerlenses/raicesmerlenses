@@ -1,0 +1,90 @@
+[debug] [2020-11-21T22:30:48.951Z] ----------------------------------------------------------------------
+[debug] [2020-11-21T22:30:48.953Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\matia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-21T22:30:48.954Z] CLI Version:   8.14.1
+[debug] [2020-11-21T22:30:48.954Z] Platform:      win32
+[debug] [2020-11-21T22:30:48.954Z] Node Version:  v14.9.0
+[debug] [2020-11-21T22:30:48.955Z] Time:          Sat Nov 21 2020 19:30:48 GMT-0300 (hora estándar de Argentina)
+[debug] [2020-11-21T22:30:48.955Z] ----------------------------------------------------------------------
+[debug] [2020-11-21T22:30:48.955Z] 
+[debug] [2020-11-21T22:30:48.963Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-21T22:30:48.963Z] > authorizing via signed-in user
+[debug] [2020-11-21T22:30:48.964Z] [iam] checking project raicesmerlenses for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-21T22:30:48.967Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/raicesmerlenses:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-21T22:30:50.092Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:30:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=976","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T22:30:50.096Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/raicesmerlenses  
+ 
+[debug] [2020-11-21T22:30:50.408Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:30:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'raicesmerlenses'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-21T22:30:50.415Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/raicesmerlenses-5d939/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-21T22:30:52.221Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:30:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[raicesmerlenses-5d939]: beginning deploy... 
+[info] i  hosting[raicesmerlenses-5d939]: found 8 files in public 
+[debug] [2020-11-21T22:30:52.244Z] [hosting] hash cache [cHVibGlj] stored for 8 files
+[debug] [2020-11-21T22:30:52.244Z] [hosting][hash queue][FINAL] {"max":2,"min":0,"avg":0,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":4}
+[debug] [2020-11-21T22:30:52.245Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/raicesmerlenses-5d939/versions/dd52894fd09c899d:populateFiles  
+ <request body omitted>
+[debug] [2020-11-21T22:30:53.575Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:30:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T22:30:53.576Z] [hosting][populate queue][FINAL] {"max":1334,"min":1334,"avg":1334,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1334}
+[debug] [2020-11-21T22:30:53.576Z] [hosting] uploads queued: 0
+[debug] [2020-11-21T22:30:53.576Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1605997853576}
+[info] +  hosting[raicesmerlenses-5d939]: file upload complete 
+[debug] [2020-11-21T22:30:53.577Z] [hosting] deploy completed after 1355ms
+[debug] [2020-11-21T22:30:53.675Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "raicesmerlenses-5d939"
+    },
+    "site": "raicesmerlenses-5d939",
+    "version": "sites/raicesmerlenses-5d939/versions/dd52894fd09c899d"
+  }
+]
+[info] i  hosting[raicesmerlenses-5d939]: finalizing version... 
+[debug] [2020-11-21T22:30:53.677Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/raicesmerlenses-5d939/versions/dd52894fd09c899d?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-11-21T22:30:55.028Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:30:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T22:30:55.028Z] [hosting] finalized version for raicesmerlenses-5d939: {"name":"sites/raicesmerlenses-5d939/versions/dd52894fd09c899d","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-11-21T22:30:52.148437Z","createUser":{"email":"raicesmerlenses@gmail.com"},"finalizeTime":"2020-11-21T22:30:55.577312Z","finalizeUser":{"email":"raicesmerlenses@gmail.com"}}
+[info] +  hosting[raicesmerlenses-5d939]: version finalized 
+[info] i  hosting[raicesmerlenses-5d939]: releasing new version... 
+[debug] [2020-11-21T22:30:55.030Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/raicesmerlenses-5d939/releases?version_name=sites/raicesmerlenses-5d939/versions/dd52894fd09c899d  
+ {"message":null}
+[debug] [2020-11-21T22:31:53.524Z] ----------------------------------------------------------------------
+[debug] [2020-11-21T22:31:53.526Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\matia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-21T22:31:53.527Z] CLI Version:   8.14.1
+[debug] [2020-11-21T22:31:53.527Z] Platform:      win32
+[debug] [2020-11-21T22:31:53.527Z] Node Version:  v14.9.0
+[debug] [2020-11-21T22:31:53.528Z] Time:          Sat Nov 21 2020 19:31:53 GMT-0300 (hora estándar de Argentina)
+[debug] [2020-11-21T22:31:53.528Z] ----------------------------------------------------------------------
+[debug] [2020-11-21T22:31:53.528Z] 
+[debug] [2020-11-21T22:31:53.536Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-21T22:31:53.537Z] > authorizing via signed-in user
+[debug] [2020-11-21T22:31:53.537Z] [iam] checking project raicesmerlenses for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-21T22:31:53.540Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/raicesmerlenses:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-21T22:31:54.568Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:31:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=926","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T22:31:54.571Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/raicesmerlenses  
+ 
+[debug] [2020-11-21T22:31:54.899Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:31:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'raicesmerlenses'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-21T22:31:54.915Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/raicesmerlenses-5d939/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-21T22:31:56.445Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 22:31:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[raicesmerlenses-5d939]: beginning deploy... 
+[info] i  hosting[raicesmerlenses-5d939]: found 8 files in public 
+[debug] [2020-11-21T22:31:56.467Z] [hosting] hash cache [cHVibGlj] stored for 8 files
+[debug] [2020-11-21T22:31:56.467Z] [hosting][hash queue][FINAL] {"max":3,"min":1,"avg":1,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":6}
+[debug] [2020-11-21T22:31:56.468Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/raicesmerlenses-5d939/versions/624489715e3a5674:populateFiles  
+ <request body omitted>
